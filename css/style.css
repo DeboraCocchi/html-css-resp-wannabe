@@ -128,18 +128,31 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
- @media (max-width:768px){
+ @media screen and (max-width:768px){
      .container{
-         width:758px;
+         width:100%;
          margin:0 auto;
          padding:0 20px;
         }
  }
 
- @media (max-width:768px){
+ @media screen and (max-width:480px){
     .container{
-        width:758px;
+        width:95%;
         margin:0 auto;
         padding:0 20px;
        }
+    
+    .row{
+        flex-direction: column;
+    }
+    
+    main .row div.col{
+        width:100%;
+        margin:1rem auto 2rem;
+    }
+
+    main .row div.col:last-of-type{
+        margin:1rem auto;
+    }
 }
